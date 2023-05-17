@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FunctionComponent, useState, createContext, useEffect } from "react";
+import Chat from "./Components/Chat/Chat";
+import Layout from "./Components/Layout/Layout";
+import ChatT from "./data/chat";
+import UserData from "./data/userData";
 
-function App() {
+const UserDataContext = createContext<UserData>({
+    idInstance: "",
+    setIdInstance: () => {},
+    apiTokenInstance: "",
+    setApiTokenInstance: () => {},
+    chatList: [],
+    setChatList: () => {},
+});
+
+const App: FunctionComponent = () => {
+  const [chatList, setChatList] = useState<ChatT[]>([]);
+  const [apiTokenInstance, setApiTokenInstance] = useState<string>("");
+  const [idInstance, setIdInstance] = useState<string>("");
+
+  const userData: UserData = {
+    idInstance,
+    setIdInstance,
+    apiTokenInstance,
+    setApiTokenInstance,
+    chatList,
+    setChatList,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserDataContext.Provider value={userData}>
+      <Layout>
+        <Chat />
+      </Layout>
+    </UserDataContext.Provider>
   );
-}
+};
 
 export default App;
+export { UserDataContext };

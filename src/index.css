@@ -1,13 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    @apply m-0 p-0 box-border;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-icon {
+    @apply text-[1.6rem] cursor-pointer text-blue-grey-200 hover:text-greeny transition duration-100;
+}
+
+.authorization-input {
+    @apply h-9 w-full rounded-md px-4 outline-none bg-blue-grey-400 text-[#d1d7db];
+}
+
+.phone-input input {
+    @apply h-9 w-full rounded-md px-2 outline-none bg-blue-grey-400 text-[#d1d7db];
+  }
+
+  .phone-input input {
+    background-color: #2a3942 !important;
+  }
+
+  input {
+    caret-color: #d1d7db;
+  }
+
+  .smth {
+    /* height: calc(100vh - 64px); */
+    /* max-height: calc(100vh - 64px); */
+    /* display: grid; */
+    /* gap: 2rem; */
+    /* overflow: auto; */
+    /* position: sticky; */
+  }
+
+.phone-input input:-webkit-autofill,
+.phone-input input:-webkit-autofill:hover,
+.phone-input input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #d1d7db;
+  caret-color: #d1d7db;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+* {
+    /* border: 1px solid blueviolet; */
 }
