@@ -7,12 +7,10 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
-      <main className="flex">
-        <Sidebar />
-        <div className="bg-blue-grey-700 w-full">
-          {children}
-        </div>
-      </main>
+    <main className="flex">
+      <Sidebar />
+      <div className="bg-blue-grey-700 w-full">{children}</div>
+    </main>
   );
 };
 

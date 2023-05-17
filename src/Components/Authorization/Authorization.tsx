@@ -1,23 +1,26 @@
-import { useState, useContext, useEffect} from "react";
+import { useState, useContext } from "react";
 import { UserDataContext } from "../../App";
 
 const Authorization = () => {
-  const {apiTokenInstance, setApiTokenInstance, idInstance, setIdInstance, chatList, setChatList} = useContext(UserDataContext);
-  const [idInstanceValue, setIdInstanceValue] = useState("1101819905");
-  const [apiTokenInstanceValue, setApiTokenInstanceValue] = useState("7b1bb21c264b465bb1e7ecf12451688fbc5d2cf2a64d49f2b3");
+  const { setApiTokenInstance, setIdInstance } = useContext(UserDataContext);
+  const [idInstanceValue, setIdInstanceValue] = useState("");
+  const [apiTokenInstanceValue, setApiTokenInstanceValue] = useState("");
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
-    setIdInstance(idInstanceValue)
-    setApiTokenInstance(apiTokenInstanceValue)
+    setIdInstance(idInstanceValue);
+    setApiTokenInstance(apiTokenInstanceValue);
 
     setIdInstanceValue("");
     setApiTokenInstanceValue("");
   };
 
   return (
-    <form className="h-full py-4 px-4 flex flex-col gap-2" onSubmit={handleSubmit}>
+    <form
+      className="h-full py-4 px-4 flex flex-col gap-2"
+      onSubmit={handleSubmit}
+    >
       <div className="grid gap-2">
         <span className="text-white">idInstance</span>
         <input
@@ -31,7 +34,6 @@ const Authorization = () => {
       <div className="grid gap-2">
         <span className="text-white">apiTokenInstance</span>
         <input
-
           required
           type="text"
           className="authorization-input"

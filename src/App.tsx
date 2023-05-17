@@ -1,16 +1,16 @@
-import { FunctionComponent, useState, createContext, useEffect } from "react";
+import { FunctionComponent, useState, createContext } from "react";
 import Chat from "./Components/Chat/Chat";
 import Layout from "./Components/Layout/Layout";
 import ChatT from "./data/chat";
 import UserData from "./data/userData";
 
 const UserDataContext = createContext<UserData>({
-    idInstance: "",
-    setIdInstance: () => {},
-    apiTokenInstance: "",
-    setApiTokenInstance: () => {},
-    chatList: [],
-    setChatList: () => {},
+  idInstance: "",
+  setIdInstance: () => {},
+  apiTokenInstance: "",
+  setApiTokenInstance: () => {},
+  chatList: [],
+  setChatList: () => {},
 });
 
 const App: FunctionComponent = () => {

@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to the GREEN-API App 👋 </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![TypeScript version](https://img.shields.io/badge/TypeScript-v5.0.2-green)
+![React version](https://img.shields.io/badge/React-v18.2.0-orange)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+> A simple to use messenger powered by green-api to exchange messages in Whatsapp. This is a testing task for a green-api . The requirements for this task can be found [here](https://drive.google.com/file/d/1ZLMtJ44iuPheqpa9uDkXzFFGeWdq7ceX/view).
 
-### `npm start`
+## Main Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Sending Messages**: Users can compose and send text messages via the connected WhatsApp API.
+- **Receiving Messages**: Users can receive and view text messages sent by recipients on WhatsApp.
+- **Logging**: The application should log all sent and received messages for reference.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Preview
 
-### `npm test`
+Here's a preview of my project in action:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Project in action]()
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+```sh
+npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Run tests
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm run test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Bogdan**
 
-## Learn More
+* Website: https://effulgent-brigadeiros-8b54e7.netlify.app/
+* Github: [@Alpha-Dolphi](https://github.com/Alpha-Dolphi)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give a ⭐️ if this project helped you!

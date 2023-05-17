@@ -24,9 +24,12 @@ const Sidebar: FunctionComponent = () => {
         handleShowChatList={handleShowChatList}
         handleShowAuthorization={handleShowAuthorization}
       />
-      {showChatList && <section className="h-full flex flex-col ">
-        <NewChatForm/><ChatList />
-        </section>}
+      {showChatList && (
+        <section className="h-full flex flex-col ">
+          <NewChatForm />
+          <ChatList />
+        </section>
+      )}
       {showAuthorization && <Authorization />}
     </section>
   );

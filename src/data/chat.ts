@@ -7,9 +7,10 @@ interface Message {
 
 type Chat = {
   chatId: string;
+  number: string;
   active: boolean;
   messages: Message[];
   inputMessage: string;
-}
+};
 
 export default Chat;
