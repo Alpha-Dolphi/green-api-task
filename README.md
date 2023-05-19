@@ -17,8 +17,7 @@
 
 Here's a preview of my project in action:
 
-![Project in action]()
-
+![Project in action](https://github.com/Alpha-Dolphi/green-api-task/assets/104200337/6edd04bd-6fc1-4e8c-a0eb-b944fd7a553e)
 
 ## Install
 
